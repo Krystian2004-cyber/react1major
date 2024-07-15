@@ -35,6 +35,7 @@ const Login = () => {
         {
             console.log('dziala');
             setResponse('invalid credentials')
+            return;
         }
      
 
