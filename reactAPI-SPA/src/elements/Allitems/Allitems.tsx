@@ -72,8 +72,10 @@ function Allitems () {
             id={car.id.toString()}
             className="card"
             onClick={() => selectCar(car)}
-            style={{ backgroundImage: `url(${car.image})` }}
+            
+            // style={{ backgroundImage: `url(${car.image})` }}
         >
+          <img src={car.image}></img>
             <div className="card-content">
                 <h3 className="car-title">{`${car.make} ${car.model}`}</h3>
                 <p className="car-year">{car.year}</p>
