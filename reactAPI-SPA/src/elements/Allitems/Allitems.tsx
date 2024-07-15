@@ -63,14 +63,27 @@ function Allitems () {
       }, [state.user?.token, navigate]);
 
     return (
+     
+        
         <div className="allitems-design">
-          {carArr.map((car, index) => (
-          <div key={index} id={car.id.toFixed()}  onClick={()=>selectCar(car)} >
-            <div>{car.make+ " "+ car.model+ " "+ car.year}</div>
-            <img src={car.image} alt={`${car.make} ${car.model}`} style={{ width: '300px', height: 'auto' }} />
-          </div>
-        ))}
+    {carArr.map((car, index) => (
+        <div
+            key={index}
+            id={car.id.toString()}
+            className="card"
+            onClick={() => selectCar(car)}
+            style={{ backgroundImage: `url(${car.image})` }}
+        >
+            <div className="card-content">
+                <h3 className="car-title">{`${car.make} ${car.model}`}</h3>
+                <p className="car-year">{car.year}</p>
+            </div>
         </div>
+    ))}
+</div>
+
+
+  
     )
 }
 

@@ -4,7 +4,7 @@ import { Car } from '../interfaces/interfaces';
 // Define the shape of the global state
 export interface GlobalState {
   user: User | null;
-  favourites: Item[];
+  favourites: Car[];
   car: Car | null;
 }
 
@@ -34,7 +34,7 @@ const GlobalStateProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   const [state, setState] = useState<GlobalState>({
     user: null,
     favourites:[],
-    car:null
+    car: null
   });
 
   return (

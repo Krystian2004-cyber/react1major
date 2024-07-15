@@ -1,13 +1,82 @@
 .login-container {
-
-    height: 82vh;
-    width: 100vw;
-
-    background-color: red;
-
     display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
-    flex-wrap: wrap;
+    height: 90vh;
+    background-color: #f7f7f7;
+    xpadding: 20px;
+}
+
+/* Styling the form */
+.login-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Styling form groups */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Styling labels */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Styling inputs */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Styling the response message */
+.response-message {
+    margin-bottom: 20px;
+    color: red; /* Change this color based on your requirement */
+}
+
+/* Styling the login button */
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 10px;
+    }
+
+    .login-form {
+        padding: 15px;
+    }
+
+    .form-group label,
+    .form-group input {
+        font-size: 14px;
+    }
+
+    .login-button {
+        padding: 8px;
+        font-size: 14px;
+    }
 }

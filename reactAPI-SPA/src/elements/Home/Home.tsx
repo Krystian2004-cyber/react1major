@@ -14,7 +14,7 @@ function Home () {
                 state?.user == null?
                 (<SwitchPages path={"/login"} destiny={"Login"} />):
                 (
-                    <img src={polonez} alt="Description of the image" />
+                    <img src={polonez} className="polonez" alt="Description of the image" />
                 )
             }
              

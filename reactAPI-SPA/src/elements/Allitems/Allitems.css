@@ -1,14 +1,78 @@
+/* Container for all cards */
 .allitems-design {
-
-    height: 82vh;
-    width: 100vw;
-
-    background-color: red;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
     display: flex;
     flex-wrap: wrap;
-    gap:40px;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+/* Individual card styling */
+.card {
+    background-size: cover; /* Ensure the background covers the entire card */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 300px;
+    height: 200px; /* Adjust height as needed */
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content to the bottom */
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Card content */
+.card-content {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    padding: 10px;
+    border-radius: 0 0 8px 8px; /* Rounded corners at the bottom */
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Car title */
+.car-title {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Car year */
+.car-year {
+    font-size: 14px;
+    margin: 5px 0 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .allitems-design {
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        height: 150px; /* Adjust height as needed for smaller screens */
+    }
+
+    .card-content {
+        padding: 8px;
+    }
+
+    .car-title {
+        font-size: 16px;
+    }
+
+    .car-year {
+        font-size: 12px;
+    }
 }

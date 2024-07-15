@@ -1,6 +1,6 @@
 .home-design {
 
-    height: 82vh;
+    height: 90vh;
     width: 100vw;
 
     background-color: beige;
@@ -10,4 +10,11 @@
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+}
+
+.polonez
+{
+    object-fit: contain;
+    width: 80%;
+    height:auto;
 }

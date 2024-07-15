@@ -13,7 +13,6 @@ function App() {
     <BrowserRouter>
       <Header />
       <Body />
-      <Footer />
       </BrowserRouter>
     </>
   )
