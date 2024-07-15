@@ -1,7 +1,7 @@
 import "./Favourites.css"
 import { useNavigate } from "react-router-dom";
 import useGlobalState from "../../context/useGlobalState";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Car } from "../../interfaces/interfaces";
 
 

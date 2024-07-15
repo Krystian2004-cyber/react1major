@@ -1,7 +1,6 @@
 import "./Home.css"
 import SwitchPages from "../SwitchPages/SwitchPages";
 import useGlobalState from "../../context/useGlobalState";
-import { useEffect, useState } from "react";
 import polonez from '../../assets/polonez.jpg'
 
 function Home () {
